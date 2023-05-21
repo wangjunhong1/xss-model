@@ -1,5 +1,6 @@
 .idea
 models
+__pycache__
 *.csv
 machine_learning/决策树结果
 machine_learning/决策树结果.pdf
