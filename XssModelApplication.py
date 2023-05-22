@@ -4,8 +4,8 @@ from kafka import KafkaProducer, KafkaConsumer
 from predict import do_predict, get_key_words
 
 # 创建消费者
-consumer = KafkaConsumer('j2p', bootstrap_servers=['127.0.0.1:9092'])
-producer = KafkaProducer(bootstrap_servers=['127.0.0.1:9092'], max_request_size=204857600)
+consumer = KafkaConsumer('j2p', bootstrap_servers=['kafka:9092'])
+producer = KafkaProducer(bootstrap_servers=['kafka:9092'], max_request_size=204857600)
 
 
 def format_result(a: float) -> str:
